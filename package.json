@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
-    "@stytch/react": "^17.0.0",
-    "@stytch/vanilla-js": "^4.11.3",
+    "@stytch/react": "^19.0.0",
+    "@stytch/vanilla-js": "^5.0.0",
     "axios": "^1.7.2",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
@@ -20,7 +20,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
-    "stytch": "^10.17.0"
+    "stytch": "^11.4.2"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.7",
