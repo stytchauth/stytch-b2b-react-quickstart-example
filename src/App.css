@@ -12,8 +12,8 @@ html, body {
 }
 
 .sidebar {
-  height: 100vh;
   width: 200px;
+  height: 100vh;
   background-color: #f3f5f6;
   padding: 20px;
   display: flex;
@@ -44,6 +44,8 @@ html, body {
   padding: 10px 0;
   color: #19303d;
   align-self: left;
+  position: absolute;
+  bottom: 20px;
 }
 
 .centered-container {
@@ -61,6 +63,7 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 100%; 
+  overflow: scroll;
 }
 
 .dashboard-content {
