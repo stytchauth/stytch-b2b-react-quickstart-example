@@ -33,12 +33,9 @@ Open `.env.local` in the text editor of your choice, and set the environment var
 
 ## Running locally
 
-After completing all the set up steps above the application can be run with the following commands:
+After completing all the set up steps above the application can be run with the following command:
 
 ```bash
-# In one terminal window, run the backend
-npm run serve
-# In another terminal window, run the frontend
 npm run dev
 ```
 

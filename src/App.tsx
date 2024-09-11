@@ -2,7 +2,9 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { useStytchMemberSession } from "@stytch/react/b2b";
 import "./App.css";
 import Settings from "./components/Settings";
-import Profile from "./components/Profile";
+import Members from "./components/Members";
+import SSO from "./components/SSO";
+import SCIM from "./components/SCIM";
 import { Dashboard } from "./components/Dashboard";
 import { SideNav } from "./components/SideNav";
 import { LoginOrSignup } from "./components/LoginOrSignup";
@@ -14,7 +16,7 @@ export const App = () => {
   const { session } = useStytchMemberSession();
   const showSidebar =
     session &&
-    ["/dashboard", "/settings", "/profile"].includes(location.pathname);
+    ["/dashboard", "/settings", "/members", "/sso", "/scim"].includes(location.pathname);
 
   return (
     <div className="app-container">
@@ -25,8 +27,10 @@ export const App = () => {
           <Route path="/authenticate" element={<Authenticate />} />
           <Route element={<ProtectedRoutes />}>
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/members" element={<Members />} />
             <Route path="/settings" element={<Settings />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/sso" element={<SSO />} />
+            <Route path="/scim" element={<SCIM />} />
           </Route>
         </Routes>
       </div>
