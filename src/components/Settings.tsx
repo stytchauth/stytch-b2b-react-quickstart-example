@@ -2,7 +2,7 @@ import { AdminPortalOrgSettings, AdminPortalB2BProducts } from '@stytch/react/b2
 
 const Settings = () => {
 
-  const styles = { fontFamily: 'Arial' };
+  const styles = { fontFamily: 'Courier New' };
 
   const config = {
     allowedAuthMethods: [AdminPortalB2BProducts.emailMagicLinks, AdminPortalB2BProducts.sso],
