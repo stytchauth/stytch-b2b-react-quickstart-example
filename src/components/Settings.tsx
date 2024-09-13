@@ -1,14 +1,8 @@
-import { AdminPortalOrgSettings, AdminPortalB2BProducts } from '@stytch/react/b2b/adminPortal';
+import { AdminPortalOrgSettings } from '@stytch/react/b2b/adminPortal';
+import { config, styles } from '../utils/adminPortalConfig';
 
 const Settings = () => {
-
-  const styles = { fontFamily: 'Courier New' };
-
-  const config = {
-    allowedAuthMethods: [AdminPortalB2BProducts.emailMagicLinks, AdminPortalB2BProducts.sso],
-  };
-
-  return <AdminPortalOrgSettings styles={styles} config={config} />;
+    return <AdminPortalOrgSettings styles={styles} config={config} />;
 };
 
 export default Settings;

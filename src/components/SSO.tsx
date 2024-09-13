@@ -1,10 +1,8 @@
 import { AdminPortalSSO } from '@stytch/react/b2b/adminPortal';
+import { config, styles } from '../utils/adminPortalConfig';
 
 const SSO = () => {
-
-  const styles = { fontFamily: 'Courier New' };
-
-  return <AdminPortalSSO styles={styles} />;
+    return <AdminPortalSSO config={config} styles={styles} />;
 };
 
 export default SSO;
