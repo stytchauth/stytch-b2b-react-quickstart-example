@@ -13,7 +13,7 @@
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@stytch/react": "^19.0.0",
     "@stytch/vanilla-js": "^5.0.0",
-    "axios": "^1.7.2",
+    "axios": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
