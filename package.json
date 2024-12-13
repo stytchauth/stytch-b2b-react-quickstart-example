@@ -10,7 +10,7 @@
     "serve": "node server/index.js"
   },
   "dependencies": {
-    "@fontsource/chivo-mono": "^5.1.0",
+    "@fontsource/ibm-plex-sans": "^5.1.0",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@stytch/react": "^19.1.1",
     "@stytch/vanilla-js": "^5.9.4",

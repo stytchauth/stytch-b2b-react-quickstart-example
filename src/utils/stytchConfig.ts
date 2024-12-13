@@ -42,11 +42,11 @@ export const discoveryConfig = {
 };
 
 export const adminPortalStyles = {
-  fontFamily: 'Chivo Mono',
+  fontFamily: 'IBM Plex Sans',
 }
 
 export const discoveryStyles = {
-  fontFamily: 'Chivo Mono',
+  fontFamily: 'IBM Plex Sans',
   container: {
     width: '500px',
   },
