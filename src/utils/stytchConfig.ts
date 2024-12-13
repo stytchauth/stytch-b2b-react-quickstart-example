@@ -1,11 +1,12 @@
 import { AdminPortalB2BProducts } from '@stytch/react/b2b/adminPortal'
+import { AuthFlowType, B2BProducts, B2BOAuthProviders } from "@stytch/vanilla-js";
 
 type Role = {
   role_id: string;
   description: string;
 }
 
-export const config = {
+export const adminPortalConfig = {
   allowedAuthMethods: [
     AdminPortalB2BProducts.emailMagicLinks,
     AdminPortalB2BProducts.sso,
@@ -31,6 +32,22 @@ export const config = {
   }
 }
 
-export const styles = {
-  fontFamily: 'Courier New',
+export const discoveryConfig = {
+  products: [B2BProducts.oauth, B2BProducts.emailMagicLinks],
+  sessionOptions: { sessionDurationMinutes: 60 },
+  oauthOptions: {
+    providers: [{type: B2BOAuthProviders.Google}]
+  },
+  authFlowType: AuthFlowType.Discovery,
+};
+
+export const adminPortalStyles = {
+  fontFamily: 'Chivo Mono',
+}
+
+export const discoveryStyles = {
+  fontFamily: 'Chivo Mono',
+  container: {
+    width: '500px',
+  },
 }

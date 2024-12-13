@@ -1,3 +1,4 @@
+import '@fontsource/chivo-mono';
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useStytchMemberSession } from "@stytch/react/b2b";
 import "./App.css";

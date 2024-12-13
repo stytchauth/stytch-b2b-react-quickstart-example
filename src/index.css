@@ -1,5 +1,5 @@
 :root {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Chivo Mono', monospace;
   line-height: 1.5;
   font-weight: 400;
 
@@ -7,14 +7,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBMPlexMono/IBMPlexMono-SemiBold.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  color: #19303D;
 }
 
 body {
