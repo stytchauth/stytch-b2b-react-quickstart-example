@@ -10,9 +10,10 @@
     "serve": "node server/index.js"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-sans": "^5.1.0",
     "@fortawesome/fontawesome-free": "^6.5.2",
-    "@stytch/react": "^19.0.0",
-    "@stytch/vanilla-js": "^5.0.0",
+    "@stytch/react": "^19.1.1",
+    "@stytch/vanilla-js": "^5.9.4",
     "axios": "^1.7.2",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",

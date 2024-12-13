@@ -1,8 +1,8 @@
 import { AdminPortalMemberManagement } from '@stytch/react/b2b/adminPortal';
-import { config, styles } from '../utils/adminPortalConfig';
+import { adminPortalConfig, adminPortalStyles } from '../utils/stytchConfig';
 
 const Members = () => {
-    return <AdminPortalMemberManagement styles={styles} config={config} />;
+    return <AdminPortalMemberManagement styles={adminPortalStyles} config={adminPortalConfig} />;
 };
 
 export default Members;
