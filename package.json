@@ -12,8 +12,8 @@
   "dependencies": {
     "@fontsource/ibm-plex-sans": "^5.1.0",
     "@fortawesome/fontawesome-free": "^6.5.2",
-    "@stytch/react": "^19.1.1",
-    "@stytch/vanilla-js": "^5.9.4",
+    "@stytch/react": "^19.2.0",
+    "@stytch/vanilla-js": "^5.15.0",
     "axios": "^1.7.2",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
@@ -21,7 +21,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
-    "stytch": "^11.4.2"
+    "stytch": "^12.4.0"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.7",
