@@ -11,6 +11,7 @@ import { SideNav } from "./components/SideNav";
 import { LoginOrSignup } from "./components/LoginOrSignup";
 import { Authenticate } from "./components/Authenticate";
 import { ProtectedRoutes } from "./components/ProtectedRoutes";
+import { Reset } from './components/Reset';
 
 export const App = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<LoginOrSignup />} />
           <Route path="/authenticate" element={<Authenticate />} />
+          <Route path="/reset" element={<Reset />} />
           <Route element={<ProtectedRoutes />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/members" element={<Members />} />
