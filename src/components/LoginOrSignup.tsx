@@ -1,19 +1,25 @@
-import { StytchB2B, useStytchMemberSession } from "@stytch/react/b2b";
+import { StytchB2B } from "@stytch/react/b2b";
 import { discoveryConfig, discoveryStyles } from '../utils/stytchConfig';
-import { Navigate } from "react-router-dom";
+import { StytchEventType } from '@stytch/vanilla-js';
+import { useNavigate } from 'react-router-dom';
+
 
 export const LoginOrSignup = () => {
-
-  const { session } = useStytchMemberSession();
-
-  if (session) {
-    return <Navigate to="/dashboard" />;
-  }
-
+  const navigate = useNavigate();
 
   return (
     <div className="centered-login">
-      <StytchB2B config={discoveryConfig} styles={discoveryStyles} />
+      <StytchB2B
+      config={discoveryConfig}
+      styles={discoveryStyles}
+      callbacks={{
+        onEvent: (event) => {
+          if (event.type === StytchEventType.AuthenticateFlowComplete) {
+            navigate('/dashboard', { replace: true });
+          }
+        },
+      }}
+      />
     </div>
   );
 };
