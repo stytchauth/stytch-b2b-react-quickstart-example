@@ -33,12 +33,16 @@ export const adminPortalConfig = {
 }
 
 export const discoveryConfig = {
-  products: [B2BProducts.sso, B2BProducts.oauth, B2BProducts.emailMagicLinks],
+  products: [B2BProducts.sso, B2BProducts.oauth, B2BProducts.emailMagicLinks, B2BProducts.passwords],
   sessionOptions: { sessionDurationMinutes: 60 },
   oauthOptions: {
     providers: [{type: B2BOAuthProviders.Google}]
   },
   authFlowType: AuthFlowType.Discovery,
+  passwordOptions: {
+    resetPasswordRedirectURL: `${window.location.origin}/reset`,
+    resetPasswordExpirationMinutes: 30,
+  },
 };
 
 export const adminPortalStyles = {
