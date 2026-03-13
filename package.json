@@ -13,7 +13,7 @@
     "@fontsource/ibm-plex-sans": "^5.1.0",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@stytch/react": "^19.5.2",
-    "@stytch/vanilla-js": "^5.23.4",
+    "@stytch/vanilla-js": "^5.45.0",
     "axios": "^1.7.2",
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
